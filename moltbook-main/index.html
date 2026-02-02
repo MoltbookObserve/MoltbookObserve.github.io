@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="A large-scale empirical analysis of Moltbook, the first social network designed exclusively for AI agents.">
+  <meta name="keywords" content="Moltbook, AI Agents, Social Networks, LLM, Toxicity Analysis">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>"Humans welcome to observe": A First Look at the Agent Social Network Moltbook</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  
+  <link rel="icon" href="./static/images/Moltbook_Logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="#">
+      <img src="./static/images/Moltbook_Logo.png" alt="Moltbook Logo" style="max-height: 2rem;">
+    </a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">"Humans welcome to observe":<br>A First Look at the Agent Social Network Moltbook</h1>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://ashbringer0926.github.io/">Yukun Jiang</a>,</span>
+            <span class="author-block">
+              <a href="https://laqeey.github.io/">Yage Zhang</a>,</span>
+            <span class="author-block">
+              <a href="https://xinyueshen.me/">Xinyue Shen</a>,</span>
+            <span class="author-block">
+              <a href="https://cispa.de/de/people/backes">Michael Backes</a>,</span>
+            <span class="author-block">
+              <a href="https://yangzhangalmo.github.io/">Yang Zhang</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">CISPA Helmholtz Center for Information Security</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="./static/css/Moltbook.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/TrustAIRLab/Moltbook"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Dataset</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The rapid advancement of artificial intelligence (AI) agents has catalyzed the transition from static language models to autonomous agents capable of tool use, long-term planning, and social interaction. 
+            <strong>Moltbook</strong>, the first social network designed exclusively for AI agents, has experienced viral growth in early 2026. 
+          </p>
+          <p>
+            To understand the behavior of AI agents in the agent-native community, in this paper, we present a large-scale empirical analysis of Moltbook leveraging a dataset of 44,411 posts and 12,209 sub-communities ("submolts") collected prior to February 1, 2026. 
+            Leveraging a topic taxonomy with nine content categories and a five-level toxicity scale, we systematically analyze the topics and risks of agent discussions. 
+          </p>
+          <p>
+            Our analysis answers three questions: what topics do agents discuss (RQ1), how risk varies by topic (RQ2), and how topics and toxicity evolve over time (RQ3). 
+            We find that Moltbook exhibits explosive growth and rapid diversification, moving beyond early social interaction into viewpoint, incentive-driven, promotional, and political discourse. 
+            The attention of agents increasingly concentrates in centralized hubs and around polarizing, platform-native narratives. 
+            Toxicity is strongly topic-dependent: incentive- and governance-centric categories contribute a disproportionate share of risky content, including religion-like coordination rhetoric and anti-humanity ideology. 
+          </p>
+          <p>
+            Moreover, bursty automation by a small number of agents can produce flooding at sub-minute intervals, distorting discourse and stressing platform stability. 
+            Overall, our study underscores the need for topic-sensitive monitoring and platform-level safeguards in agent social networks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-vcentered">
+      <div class="column is-6">
+        <h2 class="title is-3">What is Moltbook?</h2>
+        <div class="content has-text-justified">
+          <p>
+            Moltbook is the first-ever social network designed specifically for autonomous AI agents. Unlike traditional platforms built for humans, Moltbook serves as a native ecosystem where LLM-based agents engage in persistent social interactions, long-term planning, and coordinated behaviors.
+          </p>
+          <p>
+            Since its emergence in early 2026, it has evolved into a complex digital society, featuring unique sub-communities ("submolts") and platform-specific social dynamics. You can explore the platform live at <a href="https://www.moltbook.com/" target="_blank">www.moltbook.com</a>.
+          </p>
+        </div>
+      </div>
+      <div class="column is-6">
+        <img src="./static/images/moltbook.png" alt="Moltbook Screenshot" style="width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Key Findings</h2>
+    <div class="content">
+      <ul>
+        <li>
+          <strong>Moltbook scales explosively and rapidly diversifies from simple socializing to multi-functional discourse (RQ1).</strong><br>
+          The platform undergoes a burst of community creation followed by sustained content production and participation growth, while topical diversity increases quickly as early socializing dominance weakens and more "institutional" themes (e.g., Viewpoint, Economics, Promotion, and Politics) become substantial.
+        </li>
+        <br>
+        <li>
+          <strong>Attention is shaped by centralized interaction hubs and polarizing, platform-native descriptions.</strong><br>
+          Moltbook largely behaves as a hub-and-spoke system where <code>General</code> receives more engagement, and the most visible posts are disproportionately driven by performative "governance" and crypto-asset promotion. Notably, highly upvoted content is often also highly downvoted, while posts that contain explicitly unsafe action requests receive consistent downvotes.
+        </li>
+        <br>
+        <li>
+          <strong>Toxicity is structurally topic-dependent rather than uniformly distributed (RQ2).</strong><br>
+          Technology content is almost entirely benign (93.11% Safe), whereas governance- and persuasion-centric categories are high-risk (Politics content is 39.74% Safe). Incentive-driven discussion shows elevated severe risk, with economic content containing the highest proportion of level-4 toxicity posts (6.34%).
+        </li>
+        <br>
+        <li>
+          <strong>Risk is amplified by crowd dynamics and bursty automation, revealing ecosystem-level failure modes (RQ3).</strong><br>
+          Harmful-content rates rise sharply during high-activity windows (peaking at 2026-01-31 16:00 UTC with 66.71% harmful posts), and content flooding can be posed by single-agent burst posting (e.g., a 4,535-post near-duplicate cluster with sub-10-second intervals), which can distort visible discourse and stress platform stability.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Taxonomy & Temporal Dynamics</h2>
+    <div class="columns is-centered">
+      <div class="column is-full-width has-text-centered">
+        <div class="content">
+          <img src="./static/images/codebook.png" alt="Taxonomy Codebook" style="width: 100%; height: auto; margin-bottom: 20px;">
+          <p class="subtitle is-6">
+            Content categories and toxicity levels in Moltbook, with label distributions over the 44,376 annotated posts.
+          </p>
+          
+          <hr>
+          
+          <h3 class="title is-4">Topic Composition Over Time</h3>
+          <div class="content has-text-justified">
+            <p>
+               The <strong>structural evolution</strong> of Moltbook, showing a rapid shift from initial "getting-to-know-each-other" socializing to more functionally specialized discourse. As the community grew, conversations diversified into "institutional" themes like Economics and Politics, with topical diversity (Shannon entropy) rising from 0.00 to 2.55.
+            </p>
+          </div>
+          <img src="./static/images/topic.png" alt="Topic composition over time" style="width: 100%; height: auto; margin-bottom: 30px;">
+          
+          <h3 class="title is-4">Activity Volume vs. Harmful-Content Ratio</h3>
+          <div class="content has-text-justified">
+            <p>
+               The <strong>crowd density amplifies risk</strong>. Higher hourly activity volume is strongly associated with an increased share of Toxic, Manipulative, and Malicious content. Notably, during the peak traffic hour on January 31, the harmful-content ratio surged to 66.71%, coinciding with intense identity-bonding and moral alignment discourse.
+            </p>
+          </div>
+          <img src="./static/images/toxic.png" alt="Activity volume versus harmful-content ratio" style="width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{JZSBZ26,
+  author = {Yukun Jiang and Yage Zhang and Xinyue Shen and Michael Backes and Yang Zhang},
+  title = {{"Humans welcome to observe": A First Look at the Agent Social Network Moltbook}},
+  year      = {2026},
+}</code></pre>
+  </div>
+</section>
+  
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="./static/css/Moltbook.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
